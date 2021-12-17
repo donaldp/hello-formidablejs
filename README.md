@@ -44,3 +44,8 @@ Visit http://localhost:3000/posts
 ----
 
 > Note: Routes are defined under the `routes/web.imba` file and Formidable Views stored under `resources/views/posts` and Imba Components (tags) are stored under `resources/components`
+
+License
+-------
+
+The MIT License (MIT). Please see [License File](LICENSE) for more information.
