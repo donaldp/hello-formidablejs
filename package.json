@@ -1,0 +1,36 @@
+{
+  "name": "helloworld-crud",
+  "version": "0.0.1",
+  "description": "",
+  "author": "",
+  "private": true,
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "craftsman build",
+    "build:dev": "craftsman build --env=development",
+    "build:test": "craftsman build --env=testing",
+    "build:prod": "craftsman build --env=production",
+    "start": "craftsman serve",
+    "start:dev": "craftsman serve --dev",
+    "test": "jest --roots test",
+    "test:watch": "jest --roots test --watchAll"
+  },
+  "dependencies": {
+    "@bugsnag/js": "^7.14.0",
+    "@formidablejs/bugsnag-plugin": "^0.0.2",
+    "@formidablejs/craftsman": "^0.6.2",
+    "@formidablejs/framework": "^0.8.2",
+    "@formidablejs/helpers": "^0.1.1",
+    "@formidablejs/mailer": "^0.2.0-alpha.1",
+    "@formidablejs/pretty-errors": "^0.0.4",
+    "@formidablejs/stubs": "^0.2.4",
+    "imba": "^2.0.0-alpha.198",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "@types/node": "^17.0.0",
+    "jest": "^27.4.5",
+    "supertest": "^6.1.6"
+  }
+}

@@ -1,0 +1,15 @@
+/node_modules
+/storage/sessions/*.json
+.formidable
+.env
+.env.backup
+.env.development
+.env.local
+.env.production
+.env.staging
+.env.testing
+formidablejs-*
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
