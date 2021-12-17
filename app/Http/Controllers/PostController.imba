@@ -46,7 +46,8 @@ export class PostController < Controller
 
 	@use(Post)
 	def edit post\Post
-		const { attributes } = await post
+		const { attributes } = await post.catch do
+			notFound 'Post does not exist'
 
 		view EditPost, {
 			post: attributes
