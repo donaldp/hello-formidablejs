@@ -37,14 +37,12 @@ export class PostController < Controller
 
 	@use(Post)
 	def show post\Post
-		try
-			const { attributes } = await post
-
-			view ShowPost, {
-				post: attributes
-			}
-		catch
+		const { attributes } = await post.catch do
 			notFound 'Post does not exist'
+
+		view ShowPost, {
+			post: attributes
+		}
 
 	@use(Post)
 	def edit post\Post
